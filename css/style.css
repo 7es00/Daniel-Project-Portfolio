@@ -112,6 +112,23 @@ h6,
     font-weight: 200;
 }
 
+@media (max-width: 990px) {
+    .IAm {
+        font-size: 30px;
+        /* display: inline-block; */
+        width: 100%;
+margin: auto;
+    }
+    .heroSectionContent {
+        width: 85%;
+        text-align: center;
+        margin:auto;
+    };
+    .heroSectionText{
+        padding: 0;
+    }
+  
+}
 
 
 
