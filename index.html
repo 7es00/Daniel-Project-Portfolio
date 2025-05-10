@@ -21,22 +21,24 @@
 
 
 
-<body  data-bs-spy="scroll" data-bs-target="#navvbar" data-bs-offset="0" class="bg-light position-relative">
-    <navbar class="navvbar " id="navvbar">
+<body data-bs-spy="scroll" data-bs-target="#navvbar" data-bs-offset="0" class="bg-light position-relative">
+    <!-- Navbar -->
+    <navbar class="fixed-top" id="navvbar">
         <div class="container">
-            <nav class="navbar navbar-expand-lg fixed-top " id="navbar">
-                <a class="navbar-brand text-white" href="#">DANIELS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <a class="navbar-brand text-color-header" href="#">DANIELS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
-                    <ul class="navbar-nav px-5 ">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav px-5">
                         <li class="nav-item px-4">
-                            <a class="nav-link " href="#heroSection">Home</a>
+                            <a class="nav-link" href="#heroSection">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 " href="#about">About</a>
+                            <a class="nav-link px-3" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#services">Services</a>
@@ -51,13 +53,14 @@
                             <a class="nav-link px-3" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 " href="#contact">Contact</a>
+                            <a class="nav-link px-3" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </navbar>
+
     <!-- HeroSection -->
     <section id="heroSection" class="heroSection">
 
@@ -124,6 +127,7 @@
                                 <div class="progressContent px-3">
                                     <span class="float-start">Web Design</span>
                                     <span class="float-end">95%</span>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
                         </div>
@@ -143,14 +147,14 @@
                                 <div class="progressContent px-3">
                                     <span class="float-start">developer</span>
                                     <span class="float-end">90%</span>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="btn-group gap-3 pt-3">
-                            <a href="#0" download="" class="text-decoration-none">
-                                <span class="btn custom-btn btn-dark">Download C.V</span>
-                            </a>
+                        <div class="btn-group gap-3 pt-3  d-flex flex-wrap">
+                            <a href="#" download="#" class="text-decoration-none">
+                                <span class="btn custom-btn btn-dark">Download C.V</span></a>
 
                             <a href="#0" download="" class="text-decoration-none">
                                 <span class="btn btn-outline-dark">Contact Me</span>
@@ -163,8 +167,8 @@
     <!-- AboutMe End -->
 
     <!-- Services -->
-    <section id="services" class="bg-second">
-        <div class="container ">
+    <section id="services" class="bg-dark-section">
+        <div class="container">
             <div class="section-header text-center">
                 <h3 class="fw-800">Services.</h3>
             </div>
@@ -236,7 +240,7 @@
     <!-- Services End -->
 
     <!-- Portfolio -->
-    <section id="portfolio">
+    <section id="portfolio" class="bg-white-section">
         <div class="container">
             <div class="section-header text-center">
                 <h3 class="fw-800">Portfolio.</h3>
@@ -642,18 +646,282 @@
 
 
     <!-- testimonials section start -->
-    <section class="works">
+    <section class="works" class="bg-dark-section">
         <div class="container">
-            <div class="section-header text-center">
-                <h3 class="fw-800">Testimonials.</h3>
-            </div>
+
         </div>
     </section>
 
     <!-- testimonials section end -->
+    <!-------------------- clients Section -------------------->
+    <section id="clients" class="testimonials bg-dark-section">
+
+        <div class="container">
+            <div class="section-header text-center ">
+                <h3 class="fw-800">Testimonials.</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonialCarousel" class="carousel slide text-center position-relative"
+                        data-bs-ride="carousel" data-bs-interval="3000" data-bs-touch="true" data-bs-wrap="true">
+
+                        <!-- Carousel inner -->
+                        <div class="carousel-inner mb-4">
+                            <div class="carousel-item active">
+                                <img src="imgs/1_New1.jpg" class="rounded-circle mb-3"
+                                    style="width: 100px; height: 100px; object-fit: cover;" alt="User 1">
+                                <p class="w-75 mx-auto">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h5 class="fw-bold">MARTA SOCRATE</h5>
+                                <h6 class="text-muted">Envate Customer</h6>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/1_New1.jpg" class="rounded-circle mb-3"
+                                    style="width: 100px; height: 100px; object-fit: cover;" alt="User 2">
+                                <p class="w-75 mx-auto">Aliquam eget pharetra mauris. Nullam ac diam nec justo cursus
+                                    laoreet. Integer mollis, sapien ut lacinia.</p>
+                                <h5 class="fw-bold">JULIA SANDERS</h5>
+                                <h6 class="text-muted">Envate Customer</h6>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/1_New1.jpg" class="rounded-circle mb-3"
+                                    style="width: 100px; height: 100px; object-fit: cover;" alt="User 3">
+                                <p class="w-75 mx-auto">Aliquam eget pharetra mauris. Nullam ac diam nec justo cursus
+                                    laoreet. Integer mollis, sapien ut lacinia.</p>
+                                <h5 class="fw-bold">JULIA SANDERS</h5>
+                                <h6 class="text-muted">Envate Customer</h6>
+                            </div>
+                        </div>
+
+                        <!-- Carousel indicators -->
+                        <div class="carousel-indicators position-relative">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- clients section end -->
+    <!-- completion section start -->
+    <section id="completion">
+        <div class="container">
+
+            <div class="counter-container">
+                <div class="row p-5 m-5 gy-5">
+                    <div class="col-sm-12 col-lg-3 ">
+                        <div class="counter-ico">
+                            <span class="icoo-circle">
+                                <i class="fa fa-users"></i>
+                            </span>
+                        </div>
+                        <div class="icon-content  text-center">
+                            <h1 class="fw-800 counter" data-target="850">0</h1>
+                            <p class="text-muted">happy customer</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="counter-ico">
+                            <span class="icoo-circle">
+                                <i class="fa fa-thumbs-up"></i>
+                            </span>
+                        </div>
+                        <div class="icon-content  text-center">
+                            <h1 class="fw-800 counter" data-target="230">0</h1>
+                            <p class="text-muted">Complete Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="counter-ico">
+                            <span class="icoo-circle">
+                                <i class="fa fa-bullhorn"></i>
+                            </span>
+                        </div>
+                        <div class="icon-content  text-center">
+                            <h1 class="fw-800 counter" data-target="9450">0</h1>
+                            <p class="text-muted">Line of Code</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="counter-ico">
+                            <span class="icoo-circle">
+                                <i class="fa fa-cloud-download"></i>
+                            </span>
+                        </div>
+                        <div class="icon-content  text-center">
+                            <h1 class="fw-800 counter" data-target="780">0</h1>
+                            <p class="text-muted">File Downloaded</p>
+                        </div>
+                    </div>
 
 
 
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- completion section end -->
+
+    <!-- our Team -->
+    <section id="team" class="bg-dark-section">
+        <div class="container">
+            <div class="section-header text-center ">
+                <h3 class="fw-800">Our Team</h3>
+            </div>
+            <div class="row gy-3">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card rounded-0">
+                        <div class="card-img">
+                            <img src="imgs/1.jpg" class="card-img-top  img-fluid" alt="...">
+                            <div class="card-overlay">
+                                <div class="social">
+                                    <ul class="items">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card-body text-center ">
+                            <h4 class="card-text">Jhone Doe</h4>
+                            <h5 class="card-text">Front-end Developer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card rounded-0">
+                        <div class="card-img">
+                            <img src="imgs/2.jpg" class="card-img-top  img-fluid" alt="...">
+                            <div class="card-overlay">
+                                <div class="social">
+                                    <ul class="items">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center ">
+                            <h4 class="card-text">Jhone Doe</h4>
+                            <h5 class="card-text">Front-end Developer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="card rounded-0">
+                        <div class="card-img">
+                            <img src="imgs/1.jpg" class="card-img-top  img-fluid" alt="...">
+                            <div class="card-overlay">
+                                <div class="social">
+                                    <ul class="items">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card-body text-center ">
+                            <h4 class="card-text">Jhone Doe</h4>
+                            <h5 class="card-text">Front-end Developer</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- our Team end -->
+
+    <!-- contact section start -->
+    <section class=" bg-white-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center ">
+                <h3 class="fw-800">Contact Us</h3>
+            </div>
+            <div class="media">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-9 d-flex flex-lg-row flex-column align-items-center mx-auto pb-5">
+                        <div class="col-4">
+                            <div class="contact-media text-center">
+                                <span class="contact-icon">
+                                    <div class="icon d-flex justify-content-center align-items-center mx-auto my-3">
+                                        <i class="fa-solid fa-location-arrow"></i>
+                                    </div>
+                                </span>
+                                <h6 class="contact-head">Address</h6>
+                                <p class="contact-text text-muted">
+                                    6834 Hollywood Blvd - Los Angeles CA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="contact-media text-center">
+                                <span class="contact-icon">
+                                    <div class="icon d-flex justify-content-center align-items-center mx-auto my-3">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                </span>
+                                <h6 class="contact-head">Email</h6>
+                                <p class="contact-text text-muted">Support@website.com</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="contact-media text-center">
+                                <span class="contact-icon">
+                                    <div class="icon d-flex justify-content-center align-items-center mx-auto my-3">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                </span>
+                                <h6 class="contact-head">Phone</h6>
+                                <p class="contact-text text-muted">+20 010 2517 8918</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-xl-9 align-items-center mx-auto">
+                        <form>
+                            <div class="d-lg-flex my-3">
+                                <input type="text" placeholder="Name" name="name"
+                                    class="form-control w-100 w-lg-50 me-4" />
+                                <input type="email" placeholder="Email" name="email"
+                                    class="form-control w-100 w-lg-50 mt-3 mt-lg-0" />
+                            </div>
+                            <textarea name="message" id="message" placeholder="Message" class="form-control"
+                                rows="5"></textarea>
+                            <button type="submit " class="btn btn-outline-dark my-5">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- contact section end -->
+
+
+
+    <footer id="footer" class="footerSection d-flex justify-content-center align-items-center py-2">
+
+        <p class="pt-4">Copy Right 2018 © By Daniels All Rights Reserved</p>
+    </footer>
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -667,6 +935,7 @@
         });
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
